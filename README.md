@@ -15,14 +15,27 @@
 
 ## 👨🏻‍💻 Sobre o desafio
 
-- <p style="color: red;">Desenvolver um projeto com o uso de API, sendo que os grupos serão divididos em 3 apresentações (em datas diferentes para bancas diferentes)!
+- <p>Desenvolver um projeto com o uso de API, sendo que os grupos serão divididos em 3 apresentações (em datas diferentes para bancas diferentes)!
 - O projeto deverá ser o mesmo para os 3 grupos, o que muda é a temática da API que eles vão puxar, que deve estar relacionada com o mercado de cada patrocinador!! Sendo eles:
   - [AWS](https://aws.amazon.com/pt/)</br>
   - [ACCT](https://acct.global)</br>
   - [Corebiz](https://www.corebiz.ag/pt/)
-</p>
+  </p>
+
+### VTEX IO API + AWS
+
+- Com o projeto criado anteriormente no VTEX IO do desafio 1 criar uma API para servir os projetos e os pedidos vendidos (API VTEX).
+
+### AWS API Gateway
+
+- Criar uma API para gerenciamento de venda ativa na AWS - O objetivo desta API é gerenciar os clientes que se cadastraram em uma lead ou os clientes que já compraram no e-commerce, fazendo com que a equipe de pós-venda possa entrar em contato com os clientes tentando fazer venda Ativa/Casada ou UPSELL.
+
+### VTEX Hook
+
+- Agora que você tem uma API na AWS e uma API ne VTEX, faça uma ligação entre as duas APIs. Ao concluir uma compra, verificar se o usuário que finalizou é o mesmo usuário cadastrado na lead da API AWS, marcar este usuário que era somente um prospect na lead agora como cliente.
 
 ### A temática proposta para o Grupo 25 foi a ACCT</br>
+
 #### Front-End
 Neste front-end teremos a temática da ACCT, com logo, cores, a missão e valores da ACCT em uma página de **sobre**
 - Nesta página de **Sobre** mostrar as virtudes do serviço da ACCT
@@ -46,14 +59,33 @@ Neste front-end teremos a temática da ACCT, com logo, cores, a missão e valore
 - [Victor Martins](https://github.com/VictorFerreiraMartins)
 - [Victor Hugo Gadioli](https://github.com/victorhgadioli)
 
+
+
+## Diagrama da estrutura do projeto
+
+<img alt="diagrama" width="800px" src="diagrama.jpg"></img>
+
 ## Repositórios
 
 Cada app da VTEX e as funções lambdas da AWS terão seus próprios repositórios para controle individual. Desta forma, conflitos entre arquivos são evitados e a linkagem entre os apps apenas acontecem dentro do sistema do VTEX IO.
 
+- [Loja](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-store)
+
 - [Formulário de cadastro de lead](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-leadFormBlock)
+- [Tabela de leads](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-leadTableBlock)
 - [API de leads na AWS](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-AWS-API)
 - [Serviço de GraphQL para leads](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-GraphQL-service)
-- [Loja](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-store)
+- [VTEX Hook](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-VTEX-Hook)
+
+
+
+## Dependências entre repositórios
+
+Esta parte é essencial para o correto funcionamento da integração dos apps dos repositórios. As linkagens dos apps ao sistema do VTEX IO deve iniciar pelo app que não possui dependência de outros apps da VTEX. Já o funcionamento do AWS API Gateway é essencial para que o Serviço de GraphQL possa retornar dados mas não é pré-requisito para linkar este app ao sistema do VTEX IO.
+
+<img alt="diagrama" width="800px" src="dependencias.jpg"></img>
+
+
 
 ## 🚀 Tecnologias
 
@@ -62,36 +94,7 @@ Tecnologias que utilizamos para desenvolver esta API Rest:
 - [VTEX IO](https://vtex.io/)
 - [React](https://pt-br.reactjs.org/)
 - [Node.js](https://nodejs.org/en/)
-- [Axios](https://github.com/axios/axios)
+- [AWS DynamoDB](https://aws.amazon.com/pt/dynamodb/)
+- [AWS API Gateway](https://aws.amazon.com/pt/api-gateway/)
 - [AWS Lambda](https://aws.amazon.com/pt/lambda/)
-
-## 💻 Iniciando
-
-- As instruções a seguir irão te guiar para que você crie uma cópia do projeto na sua máquina local.
-
-### Pré-requisitos
-
-**Clone o projeto e acesse a pasta**
-
-```bash
-$ git clone https://github.com/victorhgadioli/hiringcoders2021-finalChallenge/ && cd hiringcoders2021-finalChallenge
-```
-
-**Siga as etapas abaixo**
-
-```bash
-# Instale as dependências
-$ yarn
-
-# Inicie o client
-$ yarn start
-```
-
-Tudo pronto! Agora, basta acessar a aplicação, disponível em:
-localhost:3000
-
-Documentação dos endpoints disponível na rota:
-localhost:3000/api-docs
-
-## ⚙️ Funcionalidades
-Funcionalidades que o sistema oferece:
+- [GraphQL](https://graphql.org/)
