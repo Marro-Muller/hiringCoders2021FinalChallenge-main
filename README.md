@@ -69,8 +69,7 @@ Neste front-end teremos a temática da ACCT, com logo, cores, a missão e valore
 
 Cada app da VTEX e as funções lambdas da AWS terão seus próprios repositórios para controle individual. Desta forma, conflitos entre arquivos são evitados e a linkagem entre os apps apenas acontecem dentro do sistema do VTEX IO.
 
-- [Loja](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-store)
-
+- [Loja](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge)
 - [Formulário de cadastro de lead](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-leadFormBlock)
 - [Tabela de leads](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-leadTableBlock)
 - [API de leads na AWS](https://github.com/victorhgadioli/hiringcoders2021-finalChallenge-AWS-API)
