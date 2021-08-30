@@ -10,7 +10,7 @@
   <a href="#-sobre o desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#repositórios">Repositórios</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#diagrama-da-estrutura-do-projeto">Diagrama</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#%EF%B8%8F-funcionalidades">Tecnologias</a>
+  <a href="#-tecnologias">Tecnologias</a>
 </p>
 
 ## 👨🏻‍💻 Sobre o desafio
