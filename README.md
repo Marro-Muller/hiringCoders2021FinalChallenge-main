@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Hiring Coders FASE#3 <br> Desafio Final <br>  Grupo 25
+  Hiring Coders <br> Desafio Final <br>  Grupo 25
 </h3>
 
 <p align="center">
