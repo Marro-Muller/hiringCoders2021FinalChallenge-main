@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="#-sobre o desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#diagrama-da-estrutura-do-projeto">Diagrama</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-iniciando">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#%EF%B8%8F-funcionalidades">Funcionalidades</a>
 </p>
@@ -82,7 +82,7 @@ Cada app da VTEX e as funções lambdas da AWS terão seus próprios repositóri
 
 Esta parte é essencial para o correto funcionamento da integração dos apps dos repositórios. As linkagens dos apps ao sistema do VTEX IO deve iniciar pelo app que não possui dependência de outros apps da VTEX. Já o funcionamento do AWS API Gateway é essencial para que o Serviço de GraphQL possa retornar dados mas não é pré-requisito para linkar este app ao sistema do VTEX IO.
 
-<img alt="diagrama" width="800px" src="dependencias.jpg"></img>
+<img alt="dependencias" width="800px" src="dependencias.jpg"></img>
 
 
 
