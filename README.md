@@ -38,7 +38,7 @@
 
 #### Front-End
 Neste front-end teremos a temática da ACCT, com logo, cores, a missão e valores da ACCT em uma página de **sobre**
-- Nesta página de **Sobre** mostrar as virtudes do serviço da ACCT
+- Nesta página de **Sobre**, mostrar as virtudes do serviço da ACCT
 - https://acct.global/pt/sobre-nos/
 ![sobre-nos](https://user-images.githubusercontent.com/1951762/131201433-6f58da5d-2453-4324-a95e-53fed286c5aa.png)
 - Criar uma página para trazer os dados da API VTEX IO criada no tópico acima, para trazer a lista de produtos cadastrados.
